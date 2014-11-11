@@ -1,0 +1,66 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.main {
+  margin-top: 10px;
+}
+
+#contentcolumn {
+  margin-left: 300px;
+  width: 100%
+}
+
+#leftcolumn {
+  float: left;
+  width: 300px;
+  border-right: 1px;
+  padding: 10px;
+  height: 100%;
+}
+
+#graph-container {
+
+  margin-left: 10px;
+  background-color: rgba(166, 201, 255, 0.28);
+}
+
+#graph-input {
+  position: relative;
+  height: 300px;
+}
+
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+#licensing {
+  fill: green;
+}
+
+.link.licensing {
+  stroke: green;
+}
+
+.link.resolved {
+  stroke-dasharray: 0,2 1;
+}
+
+circle {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+text {
+  font: 12px sans-serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+

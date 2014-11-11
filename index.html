@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="main">
+      <div id="leftcolumn">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Graph</label>
+          <!-- <textarea class="form-control" onchange="prettyPrint()" id="graph-input" rows="25"></textarea> -->
+          <div id="graph-input"></div>
+          <button type="submit" class="btn btn-default" onClick="submit()">Submit</button>
+        </div>
+
+      </div>
+      <div id="contentcolumn">
+        <!-- we have removed spanX class -->
+        <div id="graph-container"></div>
+        <!-- <div id="container"></div> -->
+      </div>
+    </div>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/d3.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/lib/beautify.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/main.js"></script>
+
+
+  </body>
+</html>
