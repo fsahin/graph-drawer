@@ -8,17 +8,17 @@
     <div class="main">
       <div id="leftcolumn">
         <div class="form-group">
-          <label for="exampleInputEmail1">Graph</label>
-          <!-- <textarea class="form-control" onchange="prettyPrint()" id="graph-input" rows="25"></textarea> -->
+          <label for="graph-input">Graph Config</label>
           <div id="graph-input"></div>
-          <button type="submit" class="btn btn-default" onClick="submit()">Submit</button>
+          <div class="buttonHolder">
+            <button type="submit" id="btn-submit" class="btn btn-default" onClick="submit()">Submit</button>
+          </div>
         </div>
 
       </div>
       <div id="contentcolumn">
         <!-- we have removed spanX class -->
         <div id="graph-container"></div>
-        <!-- <div id="container"></div> -->
       </div>
     </div>
     <script src="js/lib/jquery.js"></script>
@@ -28,7 +28,6 @@
     <script src="js/lib/beautify.js"></script>
     <script src="js/graph.js"></script>
     <script src="js/main.js"></script>
-
 
   </body>
 </html>

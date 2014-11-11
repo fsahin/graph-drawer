@@ -18,20 +18,22 @@ body {
 #leftcolumn {
   float: left;
   width: 300px;
-  border-right: 1px;
   padding: 10px;
   height: 100%;
 }
 
 #graph-container {
-
   margin-left: 10px;
   background-color: rgba(166, 201, 255, 0.28);
+  height: 700px;
 }
 
 #graph-input {
   position: relative;
   height: 300px;
+  border: 2px solid;
+  border-color: rgba(166, 201, 255, 0.28);
+  border-radius: 5px;
 }
 
 .link {
@@ -50,6 +52,11 @@ body {
 
 .link.resolved {
   stroke-dasharray: 0,2 1;
+}
+
+.buttonHolder {
+  padding-top: 5px;
+  text-align: center;
 }
 
 circle {

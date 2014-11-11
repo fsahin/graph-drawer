@@ -11,8 +11,8 @@ var editor = ace.edit("graph-input");
 editor.renderer.setShowGutter(false);
 editor.getSession().setMode("ace/mode/javascript");
 
+
 setTextAreaDefault();
-$("body").focus();
 
 function prettyPrintRefresh() {
   var ugly = editor.getValue();
@@ -23,10 +23,9 @@ function prettyPrintRefresh() {
 
 function setTextAreaDefault() {
   var pretty = js_beautify(JSON.stringify(G, undefined));
-  editor.setValue(pretty, -1);
+  editor.setValue(pretty, 1);
   $('#')
 }
-
 
 function nodeExists(nodes, val) {
   var exists = false;
